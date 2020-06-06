@@ -1,0 +1,332 @@
+package containupperlowerfunction;   // It'll create package containupperlowerfunction
+import java.util.*;
+public class upperlowercase
+{
+     public void makeLowerCase()    // this function will convert user-input string into lower case string
+    {
+                Scanner sc=new Scanner(System.in);
+                String str1;         
+                int j,k=0,count=0,countString;
+                
+                System.out.println("Enter String::");
+                str1=sc.next();
+                
+                countString=str1.length();
+                
+                char ch[]=str1.toCharArray();
+                char ar[]=new char[countString];
+               
+               
+                for(char c:ch)
+                {
+                    count++;      // this will calculate number character in string
+                }
+               
+                    for(int i=0;i<count;i++)
+                    {            
+                        if('a'==ch[i] || 'A'==ch[i])      // here is input charcter will compare with both uppercase and lower case charcter
+                        {
+                           
+                            ar[k]='a';     // if any (if condition will satisfy then it store the charcter in array with lower case
+                            k++;
+                        }
+                        if('b'==ch[i] || 'B'==ch[i])    // same here
+                        {
+                            ar[k]='b';    // same here
+                            k++;
+                        }
+                       
+                        if('c'==ch[i] || 'C'==ch[i])
+                        {
+                            ar[k]='c';
+                            k++;
+                        }
+                        if('d'==ch[i] || 'D'==ch[i])
+                        {
+                            ar[k]='d';
+                            k++;
+                        }
+                        if('e'==ch[i] || 'E'==ch[i])
+                        {
+                            ar[k]='e';
+                            k++;
+                        }
+                        if('f'==ch[i] || 'F'==ch[i])
+                        {
+                            ar[k]='f';
+                            k++;
+                        }
+                        if('g'==ch[i] || 'G'==ch[i])
+                        {
+                            ar[k]='g';
+                            k++;
+                        }
+                        if('h'==ch[i] || 'H'==ch[i])
+                        {
+                            ar[k]='h';
+                            k++;
+                        }
+                        if('i'==ch[i] || 'I'==ch[i])
+                        {
+                            ar[k]='i';
+                            k++;
+                        }
+                        if('j'==ch[i] || 'J'==ch[i])
+                        {
+                            ar[k]='j';
+                            k++;
+                        }
+                        if('k'==ch[i] || 'K'==ch[i])
+                        {
+                            ar[k]='k';
+                            k++;
+                        }
+                        if('l'==ch[i] || 'L'==ch[i])
+                        {
+                            ar[k]='l';
+                            k++;
+                        }
+                        if('m'==ch[i] || 'M'==ch[i])
+                        {
+                            ar[k]='m';
+                            k++;
+                        }
+                        if('n'==ch[i] || 'N'==ch[i])
+                        {
+                            ar[k]='n';
+                            k++;
+                        }
+                        if('o'==ch[i] || 'O'==ch[i])
+                        {
+                            ar[k]='o';
+                            k++;
+                        }
+                        if('p'==ch[i] || 'P'==ch[i])
+                        {
+                            ar[k]='p';
+                            k++;
+                        }
+                        if('q'==ch[i] || 'Q'==ch[i])
+                        {
+                            ar[k]='q';
+                            k++;
+                        }
+                        if('r'==ch[i] || 'R'==ch[i])
+                        {
+                            ar[k]='r';
+                            k++;
+                        }
+                        if('s'==ch[i] || 'S'==ch[i])
+                        {
+                            ar[k]='s';
+                            k++;
+                        }
+                        if('t'==ch[i] || 'T'==ch[i])
+                        {
+                            ar[k]='t';
+                            k++;
+                        }
+                        if('u'==ch[i] || 'U'==ch[i])
+                        {
+                            ar[k]='u';
+                            k++;
+                        }
+                        if('v'==ch[i] || 'V'==ch[i])
+                        {
+                            ar[k]='v';
+                            k++;
+                        }
+                        if('w'==ch[i] || 'W'==ch[i])
+                        {
+                            ar[k]='w';
+                            k++;
+                        }
+                        if('x'==ch[i] || 'X'==ch[i])
+                        {
+                            ar[k]='x';
+                            k++;
+                        }
+                        if('y'==ch[i] || 'Y'==ch[i])
+                        {
+                            ar[k]='y';
+                            k++;
+                        }
+                        if('z'==ch[i] || 'Z'==ch[i])
+                        {
+                            ar[k]='z';
+                            k++;
+                        }
+                        
+                    }
+                    
+                System.out.print(":>String ::");
+                
+                for( j=0;j<k;j++)
+                {
+                    System.out.print(ar[j]);    // all character which stored in this array:: ar[]
+                }
+                 
+                
+        }
+        
+    
+     public void makeUpperCase()        // this function will convert user-input string into upper case string
+    {
+        Scanner sc=new Scanner(System.in);
+        String str1;  		
+        int countString;
+        System.out.println("Enter String::");
+        str1=sc.next();
+        countString=str1.length();
+        char ch[]=str1.toCharArray();
+        char ar[]=new char[countString];
+        int j,k=0,count=0;
+       
+        for(char c:ch)
+        {
+            count++;
+        }
+       
+            for(int i=0;i<count;i++)
+            {            
+                if('a'==ch[i] || 'A'==ch[i])
+                {
+                    ar[k]='A';          // if any (if condition will satisfy then it store the charcter in array with upper case
+                    k++;
+                }
+                if('b'==ch[i] || 'B'==ch[i])
+                {
+                    ar[k]='B';
+                    k++;
+                }
+               
+                if('c'==ch[i] || 'C'==ch[i])
+                {
+                    ar[k]='C';
+                    k++;
+                }
+                if('d'==ch[i] || 'D'==ch[i])
+                {
+                    ar[k]='D';
+                    k++;
+                }
+                if('e'==ch[i] || 'E'==ch[i])
+                {
+                    ar[k]='E';
+                    k++;
+                }
+                if('f'==ch[i] || 'F'==ch[i])
+                {
+                    ar[k]='F';
+                    k++;
+                }
+                if('g'==ch[i] || 'G'==ch[i])
+                {
+                    ar[k]='G';
+                    k++;
+                }
+                if('h'==ch[i] || 'H'==ch[i])
+                {
+                    ar[k]='H';
+                    k++;
+                }
+                if('i'==ch[i] || 'I'==ch[i])
+                {
+                    ar[k]='I';
+                    k++;
+                }
+                if('j'==ch[i] || 'J'==ch[i])
+                {
+                    ar[k]='J';
+                    k++;
+                }
+                if('k'==ch[i] || 'K'==ch[i])
+                {
+                    ar[k]='K';
+                    k++;
+                }
+                if('l'==ch[i] || 'L'==ch[i])
+                {
+                    ar[k]='L';
+                    k++;
+                }
+                if('m'==ch[i] || 'M'==ch[i])
+                {
+                    ar[k]='M';
+                    k++;
+                }
+                if('n'==ch[i] || 'N'==ch[i])
+                {
+                    ar[k]='N';
+                    k++;
+                }
+                if('o'==ch[i] || 'O'==ch[i])
+                {
+                    ar[k]='O';
+                    k++;
+                }
+                if('p'==ch[i] || 'P'==ch[i])
+                {
+                    ar[k]='P';
+                    k++;
+                }
+                if('q'==ch[i] || 'Q'==ch[i])
+                {
+                    ar[k]='Q';
+                    k++;
+                }
+                if('r'==ch[i] || 'R'==ch[i])
+                {
+                    ar[k]='R';
+                    k++;
+                }
+                if('s'==ch[i] || 'S'==ch[i])
+                {
+                    ar[k]='S';
+                    k++;
+                }
+                if('t'==ch[i] || 'T'==ch[i])
+                {
+                    ar[k]='T';
+                    k++;
+                }
+                if('u'==ch[i] || 'U'==ch[i])
+                {
+                    ar[k]='U';
+                    k++;
+                }
+                if('v'==ch[i] || 'V'==ch[i])
+                {
+                    ar[k]='V';
+                    k++;
+                }
+                if('w'==ch[i] || 'W'==ch[i])
+                {
+                    ar[k]='W';
+                    k++;
+                }
+                if('x'==ch[i] || 'X'==ch[i])
+                {
+                    ar[k]='X';
+                    k++;
+                }
+                if('y'==ch[i] || 'Y'==ch[i])
+                {
+                    ar[k]='Y';
+                    k++;
+                }
+                if('z'==ch[i] || 'Z'==ch[i])
+                {
+                    ar[k]='Z';
+                    k++;
+                }
+                
+            }
+            System.out.print(":>String ::");
+        for( j=0;j<k;j++)
+        {
+            System.out.print(ar[j]);
+        }
+        
+    }
+}
