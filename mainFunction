@@ -1,0 +1,30 @@
+import java.util.*;
+import containupperlowerfunction.upperlowercase;    // containupperlowerfunction is a package which contains upperlowercase class in that class there are two functions, 1st::makeUpperCase(), 2nd::makeLowerCase.
+class LowerUpperConverter
+{
+   public static void main(String args[])
+   {
+        upperlowercase up=new upperlowercase();         // here is upperlowercase class objects has created from the containupperlowerfunction package
+        Scanner sc=new Scanner(System.in);
+        int selectOption;
+        
+        System.out.println(" ::  Upper Lower Case Converter  ::");
+        System.out.println("1. --> to Upper Case");
+        System.out.println("2. --> to Lower Case");
+        
+        System.out.println("Enter your choice:: ");        
+        selectOption=sc.nextInt();
+        
+        switch(selectOption)
+        {
+            case 1: up.makeUpperCase();   // It'll call the makeUpperFunction which has declare in the upperlowercase class
+                    break;
+            case 2: up.makeLowerCase();   // // It'll call the makeLowerCase which has declare in the upperlowercase class
+                    break;
+            default:
+            System.out.println("Select valid choice...!");
+            break;
+
+        }      
+   }
+}
